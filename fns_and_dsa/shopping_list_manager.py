@@ -1,9 +1,9 @@
 def display_menu():
-    print("Shopping List Manager!")
-    print("1. Add Item")
-    print("2. Remove Item")
-    print("3. View List")
-    print("4. Exit")
+    print(f"Shopping List Manager!")
+    print(f"1. Add Item")
+    print(f"2. Remove Item")
+    print(f"3. View List")
+    print(f"4. Exit")
 
 def main():
     shopping_list = []
@@ -26,14 +26,14 @@ def main():
             #Display the shopping list
             item = ", ".join(shopping_list)
             if shopping_list:
-                print("Shopping List:", item)
+                print(f"Shopping List:", item)
             else:
-                print("Your shopping list is empty.")
+                print(f"Your shopping list is empty.")
         elif choice == '4':
-            print("Goodbye!")
+            print(f"Goodbye!")
             break
         else:
-            print("Invalid choice. Please try again.")
+            print(f"Invalid choice. Please try again.")
 
 if __name__ == "__main__":
     main()
