@@ -6,10 +6,13 @@ class Book:
     
     def __str__(self):
 
-        return (f"{title} by {author}, published in {year}")
+        return (f"{self.title} by {self.author}, published in {self.year}")
 
     def __repr__(self):
         return f"Book('{self.title}', '{self.author}', {self.year})"
 
     def __del__(self):
-        print("Deleting (titleof the book)")
+        print("Deleting (title of the book)")
+
+if __name__ == "__main__":
+    main()
